@@ -299,17 +299,17 @@ input.Number {
 }
 
 select {
-	color: black; /* Testo nero */
-	background-color: white; /* Sfondo bianco */
-	border: 1px solid #ccc;
-	text-transform: uppercase;
-	cursor: pointer;
-	outline: none;
+    background-color: white !important; /* Sfondo bianco */
+    color: black !important; /* Testo nero */
+    border: 1px solid #ccc;
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: none;
 }
 
-	select:hover {
-		background-color: #f9f9f9; /* Sfondo leggermente più chiaro al passaggio del mouse */
-	}
+select:hover {
+    background-color: #f9f9f9; /* Sfondo leggermente più chiaro al passaggio del mouse */
+}
 
 /* UI */
 
@@ -819,6 +819,7 @@ select {
     object-fit: cover;
     border: 1px solid #ccc;
     border-radius: 5px;
+    cursor: pointer; /* Cambia il cursore a forma di mano */
 }
 
 .hidden {

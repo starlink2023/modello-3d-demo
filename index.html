@@ -20,47 +20,11 @@
     <div class="gallery">
         <div class="gallery-item">
             <p>Mobile</p>
-            <img src="img1.jpg" alt="Image 1" data-tag="sedie">
+            <img src="img1.jpg" alt="Image 1" data-tag="sedie" onclick="open3DModel('mobile.glb')">
         </div>
         <div class="gallery-item">
             <p>Prova</p>
-            <img src="img_defult.png" alt="Default Image" data-tag="mobili">
-        </div>
-        <div class="gallery-item">
-            <p>Prova</p>
-            <img src="img_defult.png" alt="Default Image" data-tag="tavoli">
-        </div>
-        <div class="gallery-item">
-            <p>Prova</p>
-            <img src="img_defult.png" alt="Default Image" data-tag="sedie">
-        </div>
-        <div class="gallery-item">
-            <p>Prova</p>
-            <img src="img_defult.png" alt="Default Image" data-tag="mobili">
-        </div>
-        <div class="gallery-item">
-            <p>Prova</p>
-            <img src="img_defult.png" alt="Default Image" data-tag="tavoli">
-        </div>
-        <div class="gallery-item">
-            <p>Prova</p>
-            <img src="img_defult.png" alt="Default Image" data-tag="sedie">
-        </div>
-        <div class="gallery-item">
-            <p>Prova</p>
-            <img src="img_defult.png" alt="Default Image" data-tag="mobili">
-        </div>
-        <div class="gallery-item">
-            <p>Prova</p>
-            <img src="img_defult.png" alt="Default Image" data-tag="tavoli">
-        </div>
-        <div class="gallery-item">
-            <p>Prova</p>
-            <img src="img_defult.png" alt="Default Image" data-tag="sedie">
-        </div>
-        <div class="gallery-item">
-            <p>Prova</p>
-            <img src="img_defult.png" alt="Default Image" data-tag="mobili">
+            <img src="img_defult.png" alt="Default Image" data-tag="mobili" onclick="open3DModel('prova.glb')">
         </div>
         <div class="gallery-item">
             <p>Prova</p>
@@ -187,6 +151,10 @@
                 }
             });
         });
+
+        function open3DModel(fileName) {
+            window.location.href = `visualizzazione.html?model=${fileName}`;
+        }
     </script>
 </body>
 </html>
