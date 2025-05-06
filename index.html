@@ -1,15 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Modello 3D</title>
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-    <style>
-      body { margin: 0; display: flex; justify-content: center; align-items: center; height: 100vh; background: #000; }
-      model-viewer { width: 80vw; height: 80vh; }
-    </style>
-  </head>
-  <body>
-    <model-viewer src="mo.glb" auto-rotate camera-controls background-color="#ffffff"></model-viewer>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon-like Page</title>
+    <link rel="stylesheet" href="stile.css">
+</head>
+<body style="background-color: white;">
+    <h1 style="text-align: center;">Amazon-like Image Gallery</h1>
+    <div class="menu">
+        <label for="action-select">Seleziona un'azione:</label>
+        <select id="action-select">
+            <option value="all">Mostra tutto</option>
+            <option value="sedie">Sedie</option>
+            <option value="mobili">Mobili</option>
+            <option value="tavoli">Tavoli</option>
+        </select>
+    </div>
+    <div class="gallery">
+        <div class="gallery-item">
+            <p>Mobile</p>
+            <img src="img1.jpg" alt="Image 1" data-tag="sedie">
+        </div>
+        <div class="gallery-item">
+            <p>Prova</p>
+            <img src="img_defult.png" alt="Default Image" data-tag="mobili">
+        </div>
+        <div class="gallery-item">
+            <p>Prova</p>
+            <img src="img_defult.png" alt="Default Image" data-tag="tavoli">
+        </div>
+        <div class="gallery-item">
+            <p>Prova</p>
+            <img src="img_defult.png" alt="Default Image" data-tag="sedie">
+        </div>
+        <div class="gallery-item">
+            <p>Prova</p>
+            <img src="img_defult.png" alt="Default Image" data-tag="mobili">
+        </div>
+        <div class="gallery-item">
+            <p>Prova</p>
+            <img src="img_defult.png" alt="Default Image" data-tag="tavoli">
+        </div>
+        <div class="gallery-item">
+            <p>Prova</p>
+            <img src="img_defult.png" alt="Default Image" data-tag="sedie">
+        </div>
+        <div class="gallery-item">
+            <p>Prova</p>
+            <img src="img_defult.png" alt="Default Image" data-tag="mobili">
+        </div>
+        <div class="gallery-item">
+            <p>Prova</p>
+            <img src="img_defult.png" alt="Default Image" data-tag="tavoli">
+        </div>
+        <div class="gallery-item">
+            <p>Prova</p>
+            <img src="img_defult.png" alt="Default Image" data-tag="sedie">
+        </div>
+        <div class="gallery-item">
+            <p>Prova</p>
+            <img src="img_defult.png" alt="Default Image" data-tag="mobili">
+        </div>
+        <div class="gallery-item">
+            <p>Prova</p>
+            <img src="img_defult.png" alt="Default Image" data-tag="tavoli">
+        </div>
+        <div class="gallery-item">
+            <p>Prova</p>
+            <img src="img_defult.png" alt="Default Image" data-tag="sedie">
+        </div>
+        <div class="gallery-item">
+            <p>Prova</p>
+            <img src="img_defult.png" alt="Default Image" data-tag="mobili">
+        </div>
+        <div class="gallery-item">
+            <p>Prova</p>
+            <img src="img_defult.png" alt="Default Image" data-tag="tavoli">
+        </div>
+        <div class="gallery-item">
+            <p>Prova</p>
+            <img src="img_defult.png" alt="Default Image" data-tag="sedie">
+        </div>
+        <div class="gallery-item">
+            <p>Prova</p>
+            <img src="img_defult.png" alt="Default Image" data-tag="mobili">
+        </div>
+        <div class="gallery-item">
+            <p>Prova</p>
+            <img src="img_defult.png" alt="Default Image" data-tag="tavoli">
+        </div>
+        <div class="gallery-item">
+            <p>Prova</p>
+            <img src="img_defult.png" alt="Default Image" data-tag="sedie">
+        </div>
+        <div class="gallery-item">
+            <p>Prova</p>
+            <img src="img_defult.png" alt="Default Image" data-tag="mobili">
+        </div>
+        <div class="gallery-item">
+            <p>Prova</p>
+            <img src="img_defult.png" alt="Default Image" data-tag="tavoli">
+        </div>
+        <div class="gallery-item">
+            <p>Prova</p>
+            <img src="img_defult.png" alt="Default Image" data-tag="sedie">
+        </div>
+        <div class="gallery-item">
+            <p>Prova</p>
+            <img src="img_defult.png" alt="Default Image" data-tag="mobili">
+        </div>
+        <div class="gallery-item">
+            <p>Prova</p>
+            <img src="img_defult.png" alt="Default Image" data-tag="tavoli">
+        </div>
+        <div class="gallery-item">
+            <p>Prova</p>
+            <img src="img_defult.png" alt="Default Image" data-tag="sedie">
+        </div>
+        <div class="gallery-item">
+            <p>Prova</p>
+            <img src="img_defult.png" alt="Default Image" data-tag="mobili">
+        </div>
+        <div class="gallery-item">
+            <p>Prova</p>
+            <img src="img_defult.png" alt="Default Image" data-tag="tavoli">
+        </div>
+        <div class="gallery-item">
+            <p>Prova</p>
+            <img src="img_defult.png" alt="Default Image" data-tag="sedie">
+        </div>
+        <div class="gallery-item">
+            <p>Prova</p>
+            <img src="img_defult.png" alt="Default Image" data-tag="mobili">
+        </div>
+        <div class="gallery-item">
+            <p>Prova</p>
+            <img src="img_defult.png" alt="Default Image" data-tag="tavoli">
+        </div>
+        <div class="gallery-item">
+            <p>Prova</p>
+            <img src="img_defult.png" alt="Default Image" data-tag="sedie">
+        </div>
+        <div class="gallery-item">
+            <p>Prova</p>
+            <img src="img_defult.png" alt="Default Image" data-tag="mobili">
+        </div>
+        <div class="gallery-item">
+            <p>Prova</p>
+            <img src="img_defult.png" alt="Default Image" data-tag="tavoli">
+        </div>
+        <div class="gallery-item">
+            <p>Prova</p>
+            <img src="img_defult.png" alt="Default Image" data-tag="sedie">
+        </div>
+        <div class="gallery-item">
+            <p>Prova</p>
+            <img src="img_defult.png" alt="Default Image" data-tag="mobili">
+        </div>
+        <div class="gallery-item">
+            <p>Prova</p>
+            <img src="img_defult.png" alt="Default Image" data-tag="tavoli">
+        </div>
+    </div>
+    <script>
+        const selectElement = document.getElementById('action-select');
+        const images = document.querySelectorAll('.gallery .gallery-item');
+
+        selectElement.addEventListener('change', (event) => {
+            const selectedTag = event.target.value;
+            let visibleCount = 0;
+
+            images.forEach((item) => {
+                const img = item.querySelector('img');
+                if (selectedTag === 'all') {
+                    if (visibleCount < 12) {
+                        item.classList.remove('hidden');
+                        visibleCount++;
+                    } else {
+                        item.classList.add('hidden');
+                    }
+                } else if (img.dataset.tag === selectedTag) {
+                    item.classList.remove('hidden');
+                } else {
+                    item.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
 </html>
