@@ -3,11 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sito per mobili </title>
+    <title>Sito per mobili</title>
     <link rel="stylesheet" href="stile.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body style="background-color: white;">
-    <h1 style="text-align: center;">Sito per mobili </h1>
+    <h1 style="text-align: center;">Sito per mobili</h1>
+
+    <!-- Menu orizzontale -->
+    <header class="w3-bar w3-black">
+        <a href="#" class="w3-bar-item w3-button">Home</a>
+        <a href="#" class="w3-bar-item w3-button">Sedie</a>
+        <a href="#" class="w3-bar-item w3-button">Mobili</a>
+        <a href="#" class="w3-bar-item w3-button">Tavoli</a>
+        <a href="#footer" class="w3-bar-item w3-button w3-right">Contatti</a>
+    </header>
+
     <div class="menu">
         <label for="action-select">Seleziona cosa vedere</label>
         <select id="action-select">
@@ -66,55 +80,69 @@
             <p>Prova</p>
             <img src="img_defult.png" alt="Default Image" data-tag="tavoli">
         </div>
-        <div class="gallery-item">
-            <p>Prova</p>
-            <img src="img_defult.png" alt="Default Image" data-tag="sedie">
-        </div>
-        <div class="gallery-item">
-            <p>Prova</p>
-            <img src="img_defult.png" alt="Default Image" data-tag="mobili">
-        </div>
-        <div class="gallery-item">
-            <p>Prova</p>
-            <img src="img_defult.png" alt="Default Image" data-tag="tavoli">
-        </div>
-        <div class="gallery-item">
-            <p>Prova</p>
-            <img src="img_defult.png" alt="Default Image" data-tag="sedie">
-        </div>
-        <div class="gallery-item">
-            <p>Prova</p>
-            <img src="img_defult.png" alt="Default Image" data-tag="mobili">
-        </div>
-        <div class="gallery-item">
-            <p>Prova</p>
-            <img src="img_defult.png" alt="Default Image" data-tag="tavoli">
-        </div>
-        <div class="gallery-item">
-            <p>Prova</p>
-            <img src="img_defult.png" alt="Default Image" data-tag="sedie">
-        </div>
-        <div class="gallery-item">
-            <p>Prova</p>
-            <img src="img_defult.png" alt="Default Image" data-tag="mobili">
-        </div>
-        <div class="gallery-item">
-            <p>Prova</p>
-            <img src="img_defult.png" alt="Default Image" data-tag="tavoli">
-        </div>
-        <div class="gallery-item">
-            <p>Prova</p>
-            <img src="img_defult.png" alt="Default Image" data-tag="sedie">
-        </div>
-        <div class="gallery-item">
-            <p>Prova</p>
-            <img src="img_defult.png" alt="Default Image" data-tag="mobili">
-        </div>
-        <div class="gallery-item">
-            <p>Prova</p>
-            <img src="img_defult.png" alt="Default Image" data-tag="tavoli">
+    </div>
+
+    <!-- Contact Form -->
+    <div style="background-color: white; padding: 20px;">
+        <h2 style="text-align: center;">Contatti</h2>
+        <div style="border: 2px solid black; border-radius: 10px; padding: 20px; max-width: 600px; margin: auto;">
+            <form style="width: 100%; max-width: 100%; margin: auto;">
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" placeholder="Il tuo nome..." style="width: 100%; padding: 10px; margin: 10px 0; border-radius: 10px;">
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="La tua email..." style="width: 100%; padding: 10px; margin: 10px 0; border-radius: 10px;">
+                
+                <label for="subject">Oggetto</label>
+                <input type="text" id="subject" name="subject" placeholder="Oggetto..." style="width: 100%; padding: 10px; margin: 10px 0; border-radius: 10px;">
+                
+                <label for="message">Messaggio</label>
+                <textarea id="message" name="message" placeholder="Scrivi qualcosa..." style="width: 100%; padding: 10px; margin: 10px 0; height: 150px; border-radius: 10px;"></textarea>
+                
+                <input type="submit" value="Invia" style="background-color: black; color: white; padding: 10px 20px; border: none; cursor: pointer; width: 100%; border-radius: 10px;">
+            </form>
         </div>
     </div>
+
+    <!-- Footer -->
+    <footer id="footer" style="background-color: #f1f1f1; padding: 20px; text-align: center;">
+        <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+            <div>
+                <h3>Contact</h3>
+                <p>Questions? Go ahead.</p>
+                <p>Name</p>
+                <p>Email</p>
+                <p>Subject</p>
+                <p>Message</p>
+            </div>
+            <div>
+                <h3>About</h3>
+                <p><a href="#">About us</a></p>
+                <p><a href="#">We're hiring</a></p>
+                <p><a href="#">Support</a></p>
+                <p><a href="#">Find store</a></p>
+                <p><a href="#">Shipment</a></p>
+               
+            </div>
+            <div>
+                <h3>Store</h3>
+                <p>Company Name</p>
+                <p>0044123123</p>
+                <p>ex@mail.com</p>
+                <h4>We accept</h4>
+                <p>Amex</p>
+               
+            </div>
+        </div>
+        <div style="margin-top: 20px;">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-pinterest"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+    </footer>
+
     <script>
         const selectElement = document.getElementById('action-select');
         const images = document.querySelectorAll('.gallery .gallery-item');

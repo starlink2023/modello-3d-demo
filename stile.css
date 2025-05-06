@@ -821,24 +821,25 @@ select:hover {
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 immagini per riga */
-    gap: 20px; /* Spazio tra le immagini */
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Ogni immagine occupa almeno 400px */
+    gap: 30px; /* Aumenta lo spazio tra le immagini */
     padding: 20px;
     justify-content: center;
+}
+
+.gallery img {
+    width: 100%; /* Adatta le immagini alla larghezza del contenitore */
+    height: 400px; /* Imposta un'altezza fissa per uniformare le immagini */
+    border-radius: 10px; /* Angoli arrotondati */
+    object-fit: cover; /* Mantiene le proporzioni e riempie il contenitore */
+    border: 1px solid #ccc;
+    cursor: pointer; /* Cambia il cursore a forma di mano */
 }
 
 .gallery-item {
     text-align: center;
     color: black; /* Testo nero */
-}
-
-.gallery img {
-    width: 100%; /* Adatta l'immagine alla larghezza del contenitore */
-    height: auto; /* Mantiene le proporzioni */
-    object-fit: cover;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    cursor: pointer; /* Cambia il cursore a forma di mano */
+    margin-bottom: 50px; /* Aumenta lo spazio tra gli elementi */
 }
 
 .hidden {
@@ -856,6 +857,10 @@ select:hover {
 	font-family: Arial, sans-serif;
 	font-size: 14px;
 	z-index: 1000;
+}
+
+.w3-row-padding {
+    gap: 20px; /* Spazio tra le colonne */
 }
 
 /* Media query per dispositivi mobili */
