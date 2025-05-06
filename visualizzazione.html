@@ -19,7 +19,16 @@
   </head>
   <body>
     <div id="fps-counter">FPS: 0</div>
-    <model-viewer id="viewer" auto-rotate camera-controls background-color="#ffffff"></model-viewer>
+    <model-viewer 
+      id="viewer" 
+      auto-rotate 
+      auto-rotate-delay="0" 
+      rotation-per-second="30deg" 
+      camera-controls 
+      interaction-prompt="auto" 
+      interaction-prompt-threshold="1000" 
+      background-color="#ffffff">
+    </model-viewer>
     <script>
       const urlParams = new URLSearchParams(window.location.search);
       const model = urlParams.get('model');
