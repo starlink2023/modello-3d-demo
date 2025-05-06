@@ -7,9 +7,11 @@
     <style>
       body { margin: 0; display: flex; justify-content: center; align-items: center; height: 100vh; background: #000; }
       model-viewer { width: 80vw; height: 80vh; }
+      #fps-counter { position: absolute; top: 10px; left: 10px; color: white; font-size: 16px; }
     </style>
   </head>
   <body>
+    <div id="fps-counter">FPS: 0</div>
     <model-viewer id="viewer" auto-rotate camera-controls background-color="#ffffff"></model-viewer>
     <script>
       const urlParams = new URLSearchParams(window.location.search);
@@ -19,6 +21,26 @@
       } else {
         alert('Nessun modello specificato!');
       }
+
+      // FPS Counter Logic
+      let lastFrameTime = performance.now();
+      let fps = 0;
+
+      function updateFPS() {
+        const now = performance.now();
+        const delta = now - lastFrameTime;
+        fps = Math.round(1000 / delta);
+        lastFrameTime = now;
+
+        const fpsCounter = document.getElementById('fps-counter');
+        if (fpsCounter) {
+          fpsCounter.textContent = `FPS: ${fps}`;
+        }
+
+        requestAnimationFrame(updateFPS); // Continue the loop
+      }
+
+      requestAnimationFrame(updateFPS); // Start the FPS calculation loop
     </script>
   </body>
 </html>
