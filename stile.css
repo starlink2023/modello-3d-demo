@@ -8,7 +8,7 @@
 
 body {
 	font-family: Arial, sans-serif;
-	margin: 0;
+	margin: 0 50px; /* Aumenta i margini laterali */
 	padding: 0;
 	overflow: auto; /* Abilita lo scrolling */
 	background-color: white; /* Sfondo bianco */
